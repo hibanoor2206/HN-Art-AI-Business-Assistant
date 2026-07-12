@@ -1,0 +1,65 @@
+/** @type {import('tailwindcss').Config} */
+export default {
+  content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
+  darkMode: 'class',
+  theme: {
+    extend: {
+      fontFamily: {
+        serif: ['"Playfair Display"', 'Georgia', 'serif'],
+        sans: ['Poppins', 'system-ui', 'sans-serif'],
+      },
+      colors: {
+        sage: {
+          50: '#f3f6f3',
+          100: '#e3ebe4',
+          200: '#c7d7ca',
+          300: '#a0bba7',
+          400: '#7a9d83',
+          500: '#6B8E73',
+          600: '#52705a',
+          700: '#3f5847',
+          800: '#2F4F3E',
+          900: '#243d2f',
+          950: '#1a2e22',
+        },
+        beige: {
+          50: '#fbf9f4',
+          100: '#F5f0e6',
+          200: '#E9DFC8',
+          300: '#dcd0b1',
+          400: '#c9bd96',
+        },
+        cream: '#F8F6F1',
+        gold: {
+          400: '#d6bb85',
+          500: '#C9A86A',
+          600: '#b39253',
+          700: '#927a43',
+        },
+      },
+      keyframes: {
+        fadeIn: { '0%': { opacity: '0' }, '100%': { opacity: '1' } },
+        fadeUp: { '0%': { opacity: '0', transform: 'translateY(20px)' }, '100%': { opacity: '1', transform: 'translateY(0)' } },
+        slideDown: { '0%': { opacity: '0', transform: 'translateY(-10px)' }, '100%': { opacity: '1', transform: 'translateY(0)' } },
+        slideInLeft: { '0%': { opacity: '0', transform: 'translateX(-20px)' }, '100%': { opacity: '1', transform: 'translateX(0)' } },
+        scaleIn: { '0%': { opacity: '0', transform: 'scale(0.95)' }, '100%': { opacity: '1', transform: 'scale(1)' } },
+        float: { '0%, 100%': { transform: 'translateY(0)' }, '50%': { transform: 'translateY(-12px)' } },
+        shimmer: { '0%': { backgroundPosition: '-200% 0' }, '100%': { backgroundPosition: '200% 0' } },
+        pulseDot: { '0%, 100%': { transform: 'scale(1)', opacity: '1' }, '50%': { transform: 'scale(0.6)', opacity: '0.5' } },
+        spin: { '0%': { transform: 'rotate(0deg)' }, '100%': { transform: 'rotate(360deg)' } },
+      },
+      animation: {
+        'fade-in': 'fadeIn 0.4s ease-out',
+        'fade-up': 'fadeUp 0.5s ease-out',
+        'slide-down': 'slideDown 0.2s ease-out',
+        'slide-in-left': 'slideInLeft 0.3s ease-out',
+        'scale-in': 'scaleIn 0.25s ease-out',
+        float: 'float 6s ease-in-out infinite',
+        shimmer: 'shimmer 2s linear infinite',
+        'pulse-dot': 'pulseDot 1.4s ease-in-out infinite',
+        spin: 'spin 0.8s linear infinite',
+      },
+    },
+  },
+  plugins: [],
+};

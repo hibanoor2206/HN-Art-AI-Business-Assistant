@@ -1,0 +1,72 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    font-family: 'Poppins', system-ui, sans-serif;
+    @apply bg-cream text-sage-800 transition-colors duration-300;
+  }
+  .dark body {
+    @apply bg-sage-900 text-beige-100;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', Georgia, serif;
+  }
+  ::selection {
+    @apply bg-gold-500/25;
+  }
+}
+
+@layer utilities {
+  .glass {
+    @apply bg-white/75 backdrop-blur-xl border border-white/60;
+  }
+  .dark .glass {
+    @apply bg-sage-800/60 backdrop-blur-xl border border-sage-700/50;
+  }
+  .glass-strong {
+    @apply bg-white/90 backdrop-blur-xl border border-sage-100;
+  }
+  .dark .glass-strong {
+    @apply bg-sage-800/70 backdrop-blur-xl border border-sage-700/50;
+  }
+  .text-gradient-gold {
+    background: linear-gradient(135deg, #C9A86A, #d6bb85, #b39253);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .text-gradient-sage {
+    background: linear-gradient(135deg, #2F4F3E, #6B8E73);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .dark .text-gradient-sage {
+    background: linear-gradient(135deg, #a0bba7, #6B8E73);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .scrollbar-thin::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  .scrollbar-thin::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  .scrollbar-thin::-webkit-scrollbar-thumb {
+    @apply bg-sage-300 dark:bg-sage-600 rounded-full;
+  }
+  .scrollbar-thin::-webkit-scrollbar-thumb:hover {
+    @apply bg-sage-400 dark:bg-sage-500;
+  }
+}
