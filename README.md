@@ -1,3 +1,37 @@
-# HN-Art-AI-Business-Assistant
+# HN Art AI Business Assistant
 
-[![Open in Bolt](https://bolt.new/static/open-in-bolt.svg)](https://bolt.new/~/sb1-5mlrmxxh)
+An AI-powered business assistant designed for handmade businesses like HN Art.
+
+## Features
+
+- AI Product Description Generator
+- AI Customer Reply Generator
+- AI Instagram Caption Generator
+- AI Pricing Assistant
+- Marketing Ideas Generator
+- Business Name Generator
+- SEO Keyword Generator
+- Email Writer
+- Responsive Design
+- Elegant Handmade Business UI
+
+## Tech Stack
+
+- React
+- TypeScript
+- Vite
+- Tailwind CSS
+
+## Live Demo
+
+(Paste your Bolt website link here)
+
+## GitHub Repository
+
+(This repository)
+
+## Author
+
+Hiba Noor
+BS Information Technology
+University of Agriculture Faisalabad
